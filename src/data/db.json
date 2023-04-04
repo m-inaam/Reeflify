@@ -1,0 +1,41 @@
+{
+   
+    "NFT": [
+        {
+            "id": 1,
+            "nft": "nft1",
+            "name": "Great Coral Reef",
+            "type": "Coral",
+            "price": "4.89 ",
+            "owner": "SalvadorDali",
+            "ownerImage": "owner1"
+        },
+        {
+            "id":2,
+            "nft": "nft2",
+            "name": "Great Coral Reef",
+            "type": "Coral",
+            "price": "4.89 ",
+            "owner": "SalvadorDali",
+            "ownerImage": "owner2"
+        },
+        {
+            "id":3,
+            "nft": "nft3",
+            "name": "Great Coral Reef",
+            "type": "Coral",
+            "price": "4.89 ",
+            "owner": "SalvadorDali",
+            "ownerImage": "owner3"
+        },
+        {
+            "id": 4,
+            "nft": "nft4",
+            "name": "Great Coral Reef",
+            "type": "Coral",
+            "price": "4.89 ",
+            "owner": "SalvadorDali",
+            "ownerImage": "owner4"
+        }
+    ]
+}
