@@ -11,6 +11,7 @@ import NFTPage from './views/dashboard/NFTPage'
 import ErrorPage from './views/ErrorPage'
 import SignUp from './views/SignUp'
 import LoginPage from './views/LoginPage'
+import { ContextProvider } from './Context'
 
 
 
@@ -58,6 +59,8 @@ const Router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={Router} />
+    <ContextProvider>
+      <RouterProvider router={Router} />
+    </ContextProvider>
   </React.StrictMode>,
 )

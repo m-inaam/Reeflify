@@ -97,7 +97,7 @@ export default EventsPage;
 
 const GoogleMapPage = () => {
     const { isLoaded } = useLoadScript({
-        googleMapsApiKey: "AIzaSyBc2z-0e3rg9-oy5vQSMDbunbPhcymdd74"
+        googleMapsApiKey: "AIzaSyBQvBo4hVVA4auP4-jbvxw7xOIBg5-elXA"
     });
 
 
@@ -114,13 +114,7 @@ const GoogleMapPage = () => {
 
 
     function Map() {
-        // const center = useMemo(() => ({ lat: 30, lng: 33 }), []);
-
-        const position = {
-            lat: 37.772,
-            lng: -122.214
-        }
-
+         const position = useMemo(() => ({ lat: 30, lng: 33 }), []);
 
         return (
             <div className="h-[91.5%] ">
@@ -138,6 +132,7 @@ const GoogleMapPage = () => {
                                 lng: -12.214
                             }}
                         />
+                        <Marker position={position} />
                     </GoogleMap>
 
                     <div className=" absolute top-2 left-2 flex justify-between text-white bg-primary/50 border border-primary rounded-md text-[14px] items-center  px-3  py-1">
