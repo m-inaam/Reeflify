@@ -1,14 +1,14 @@
 import mapImg from "../assets/image/mapImg.png"
-import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
+import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api";
 import { FiSearch } from "react-icons/all"
 import { CCoral, CCoralB, Coral, CoralWhite, NCoral } from "../assets/svg/svg";
 import img from "../assets/svg/CCoral.svg"
-import { useMemo } from "react";
+import { useMemo , useState} from "react";
 
 
 export default function GoogleMapPage() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBc2z-0e3rg9-oy5vQSMDbunbPhcymdd74"
+			googlemapsapikey: "AlzaSyBQvBo4hVVA4auP4-jbvxw7%C3%970IBg5-elXA"
   });
 
 
@@ -25,6 +25,7 @@ export default function GoogleMapPage() {
 
 
   function Map() {
+    const [corals, setCorals] = useState([])
     // const center = useMemo(() => ({ lat: 30, lng: 33 }), []);
 
     const position = {
@@ -32,7 +33,22 @@ export default function GoogleMapPage() {
       lng: -122.214
     }
 
-
+		const GetCorals = async () => {
+  	try {
+    	const response = await fetch('https://reeflify-backend.onrender.com/api/v1/corals');
+    	const data = await response.json();
+    	console.log(data);
+    	setCorals(data);
+  	} catch (error) {
+   		console.log(error);
+    	return null;
+  	}
+	}
+  
+	useEffect(() => {
+  	GetCorals();
+	}, [])
+  
     return (
       <div className="h-[91.5%] ">
         <div className=" relative shadow-cards   h-[100%] w-full
@@ -43,12 +59,18 @@ export default function GoogleMapPage() {
             zoom={10}
             center={position}
             mapContainerClassName={"  h-[100%] w-full "}>
-            <Marker
-              position={{
-                lat: 37.772,
-                lng: -12.214
-              }}
-            />
+   
+             {
+              corals.map(({lat, lng, coralId}) => (
+                <MarkerF
+                		key={coralId}
+                  	position={{
+                			lat: lat,
+                			lng: lon
+              			}}
+                />
+              ))
+            }
           </GoogleMap>
 
           <div className=" absolute top-2 left-2 flex justify-between text-white bg-primary/50 border border-primary rounded-md text-[14px] items-center  px-3  py-1">
