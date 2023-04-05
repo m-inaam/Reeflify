@@ -8,7 +8,7 @@ import { useMemo , useState, useEffect} from "react";
 
 export default function GoogleMapPage() {
   const { isLoaded } = useLoadScript({
-			googlemapsapikey: "AlzaSyBQvBo4hVVA4auP4-jbvxw7%C3%970IBg5-elXA"
+			googlemapsapikey: "AlzaSyBQvBo4hVVA4auP4-jbvxw7×0IBg5-elXA"
   });
 
 
@@ -55,7 +55,6 @@ export default function GoogleMapPage() {
             border-[3px] border-gray rounded-lg">
 
           <GoogleMap
-            id="Map"
             zoom={10}
             center={position}
             mapContainerClassName={"  h-[100%] w-full "}>
