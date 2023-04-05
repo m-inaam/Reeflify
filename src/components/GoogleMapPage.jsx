@@ -60,12 +60,12 @@ export default function GoogleMapPage() {
             mapContainerClassName={"  h-[100%] w-full "}>
    
              {
-              corals.map(({lat, lng, coralId}) => (
+              corals.map((item) => (
                 <MarkerF
-                		key={coralId}
+                		key={item.coralId}
                   	position={{
-                			lat: lat,
-                			lng: lon
+                			lat: item.lat,
+                			lng: item.lon
               			}}
                 />
               ))
