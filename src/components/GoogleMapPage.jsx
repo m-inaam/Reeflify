@@ -3,7 +3,7 @@ import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api";
 import { FiSearch } from "react-icons/all"
 import { CCoral, CCoralB, Coral, CoralWhite, NCoral } from "../assets/svg/svg";
 import img from "../assets/svg/CCoral.svg"
-import { useMemo , useState} from "react";
+import { useMemo , useState, useEffect} from "react";
 
 
 export default function GoogleMapPage() {
