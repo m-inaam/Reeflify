@@ -9,12 +9,12 @@ import CoralCastle from "../assets/svg/CoralCastle.svg"
 import Temperature from "../assets/svg/Temperature.svg"
 
 
-const MapTag = ({ dcoral, country, location, bleachingSeverity, onClick, waterTemperature, coralFamily, coralSpecies }) => {
+const MapTag = ({onMouseLeave, dcoral, country, location, bleachingSeverity, onClick, waterTemperature, coralFamily, coralSpecies }) => {
     const [seeMore, setSeeMore] = useState(false)
     return (
         <div className=" ">
 
-            <div className={` ${dcoral ? "top-[-50vh]" : "top-10"} ${seeMore ? "w-[350px]" : "w-[250px]"} flex bg-gray text-white rounded-md transition-all duration-150 border-[3px] border-primary shadow-cards  mx-[35%] text-[8px] p-5 absolute z-40  gap-2 `}>
+            <div onMouseLeave={onMouseLeave} className={` ${dcoral ? "top-[-50vh]" : "top-10"} ${seeMore ? "w-[350px]" : "w-[250px]"} flex bg-gray text-white rounded-md transition-all duration-150 border-[3px] border-primary shadow-cards  mx-[35%] text-[8px] p-5 absolute z-40  gap-2 `}>
                 <MdClose onClick={onClick} className=" absolute top-[-10px] p-2 right-[-10px] rounded-full text-white bg-primary font-semibold" size={30} />
 
                 <div className="w-full">
