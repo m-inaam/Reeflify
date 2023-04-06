@@ -13,7 +13,7 @@ const Events = () => {
         },
 
         {
-            id: 3,
+            id: 2,
             name: "Great Coral Reef",
             about: "Join us for a hands-on workshop where you'll learn about the causes and consequences of coral bleaching",
             link: "",

@@ -11,7 +11,7 @@ const HomePage = () => {
     const navigate = useNavigate('')
 
     return (
-        <div className="pr-[60px]">
+        <div className=" h-screen p-3 pr-[70px] pl-[80px]">
             <div className="">
                 <div className=" grid grid-cols-6 grid-rows-4  p-3  gap-3">
                     <div className=" row-span-4  col-span-4">

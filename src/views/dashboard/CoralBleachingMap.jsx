@@ -4,7 +4,7 @@ import GoogleMap from "../../components/GoogleMapPage";
 
 const CoralBleachingMap = () => {
     return (
-        <div className=" h-screen p-3 mr-[60px]">
+        <div className=" h-screen p-3 pr-[70px] pl-[80px]">
             <div className="h-[85vh]">
                 <h2 className=" mb-2 text-white text-[20px]">Coral Bleaching Map </h2>
 

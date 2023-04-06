@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import info from "../assets/svg/Info.svg"
 import {
     BrandLogo,
+    CCoral,
     Coral,
     Event,
     Figma,
@@ -9,8 +10,10 @@ import {
     Map,
     Meta
 } from "../assets/svg/svg";
+import { useState } from "react";
 
 const DashboardSideBar = () => {
+    const [open, setOpen] = useState(false)
     const Routes = [
         {
             id: 1,
@@ -40,14 +43,20 @@ const DashboardSideBar = () => {
             id: 5,
             link: "/metaverse",
             text: "Metaverse",
-            icon: <Meta className="w-[24px] max-w-10" />,
+            icon: <Meta className={` ${open ? "w-[24px] max-w-10" : "w-[40px]"}`} />,
         },
     ]
     return (
-        <nav className="shadow-cards  flex flex-col justify-between w-[20%] h-screen bg-gray text-white ">
+        <nav onMouseEnter={() => setOpen(!open)}
+            onMouseLeave={() => setOpen(!open)}
+            className={`${open ? "w-[20%]" : "w-[70px]"} fixed z-20 transition-all duration-200 shadow-cards  flex flex-col justify-between  h-screen bg-gray text-white`}>
             <div>
                 <div className=" flex items-center justify-center py-3 border-b border-lightGray mx-5 ">
-                    <BrandLogo />
+                    {
+                        open ? <BrandLogo />
+                            :
+                            <CCoral className="w-20" />
+                    }
                 </div>
 
                 <ul className=" flex flex-col  mt-5">
@@ -61,7 +70,9 @@ const DashboardSideBar = () => {
                                     className="flex border-l-[3px] py-3 transition-opacity duration-200 border-gray px-5 gap-3"
                                     to={link} >
                                     {icon}
-                                    <p className=" text-base col-span-2">{text}</p>
+                                    {
+                                        open ? <p className=" text-[13px] col-span-2">{text}</p> : ""
+                                    }
                                 </NavLink>
                             </li>
                         ))

@@ -46,7 +46,7 @@ const EventsPage = () => {
         },
     ]
     return (
-        <div className=" h-screen p-3 mr-[60px] mb-20">
+        <div className=" h-screen p-3 pr-[70px] pl-[80px]">
             <div className="h-[45vh]">
                 <div className="mb-2">
                     <h2 className="  text-white text-[20px]">Find an Event </h2>

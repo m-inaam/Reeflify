@@ -13,6 +13,9 @@ export function ContextProvider({ children }) {
 
     const [corals, setCorals] = useState([])
     const [pending, setPending] = useState(true)
+
+
+
     const GetCorals = async () => {
         try {
             const response = await fetch('https://reeflify-backend.onrender.com/api/v1/corals');
@@ -32,7 +35,7 @@ export function ContextProvider({ children }) {
 
 
     const value = {
-        corals
+        corals,
     }
 
     if (pending) {

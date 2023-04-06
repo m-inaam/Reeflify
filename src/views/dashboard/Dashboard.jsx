@@ -6,7 +6,7 @@ const Dashboard = () => {
     return (
         <div className=" flex">
             <DashboardSideBar />
-            <div className=" h-screen bg-lightGray w-[80%] overflow-y-auto">
+            <div className=" h-screen  bg-lightGray w-[100%] overflow-y-auto">
                 <Outlet />
                 <ChatBot />
             </div>
