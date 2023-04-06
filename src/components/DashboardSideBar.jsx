@@ -55,7 +55,7 @@ const DashboardSideBar = () => {
                     {
                         open ? <BrandLogo />
                             :
-                            <CCoral className="w-20" />
+                            <CCoral className="w-[30px]" />
                     }
                 </div>
 
