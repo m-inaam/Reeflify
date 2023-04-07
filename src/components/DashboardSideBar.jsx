@@ -11,6 +11,7 @@ import {
     Meta
 } from "../assets/svg/svg";
 import { useState } from "react";
+import { FiUsers } from "react-icons/fi";
 
 const DashboardSideBar = () => {
     const [open, setOpen] = useState(false)
@@ -44,6 +45,12 @@ const DashboardSideBar = () => {
             link: "/metaverse",
             text: "Metaverse",
             icon: <Meta className={` ${open ? "w-[24px] max-w-10" : "w-[40px]"}`} />,
+        },
+        {
+            id: 6,
+            link: "/team",
+            text: "Meet The Team",
+            icon: <FiUsers className={` ${open ? "w-[24px] max-w-10" : "w-[40px]"}`} size={24} />,
         },
     ]
     return (

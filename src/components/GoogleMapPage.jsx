@@ -79,7 +79,6 @@ function GoogleMapPage() {
                     icon: bleachingSeverity === "HIGH" && high || bleachingSeverity === "Medium" && Mediumsvg || bleachingSeverity === "Low" && lowsvg || bleachingSeverity === "No Bleaching" && nosvg || bleachingSeverity === "Low" && lowsvg || bleachingSeverity === "Severity Unknown" && unknown,
                   }}
                   onClick={() => handleClick(coralId)}
-                  // onMouseEnter={() => handleClick(coralId)}
 
                 />
               ))

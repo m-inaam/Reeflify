@@ -41,7 +41,7 @@ const MapTag = ({onMouseLeave, dcoral, country, location, bleachingSeverity, onC
 
                             {
                                 seeMore &&
-                                <div className=" bg-lightGray h-[100px] w-[50%] relative">
+                                <div className=" bg-lightGray h-[100px] rounded w-[50%] relative">
 
                                 </div>
                             }

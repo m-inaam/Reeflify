@@ -34,7 +34,7 @@ module.exports = {
         // 'paragraph': ['Casper'],
         // 'body': ['Karla', ],
         sans: ["PT Sans", "sans-serif", ...defaultTheme.fontFamily.sans],
-        poppins: ["Casper", "sans-serif"],
+        Casper: ["Casper", "sans-serif"],
       },
 
       backgroundImage: {

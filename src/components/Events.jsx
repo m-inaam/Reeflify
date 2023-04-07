@@ -1,36 +1,8 @@
 import EventCard from "./EventCard";
+import data from "../data/db.json"
 
 const Events = () => {
-    const eventData = [
-        {
-            id: 1,
-            name: "Great Coral Reef",
-            about: "Join us for a hands-on workshop where you'll learn about the causes and consequences of coral bleaching",
-            link: "",
-            location: "Cairo, Egypt",
-            date: "3/22/2023",
-
-        },
-
-        {
-            id: 2,
-            name: "Great Coral Reef",
-            about: "Join us for a hands-on workshop where you'll learn about the causes and consequences of coral bleaching",
-            link: "",
-            location: "Cairo, Egypt",
-            date: "3/22/2023",
-
-        },
-        {
-            id: 3,
-            name: "Great Coral Reef",
-            about: "Join us for a hands-on workshop where you'll learn about the causes and consequences of coral bleaching",
-            link: "",
-            location: "Cairo, Egypt",
-            date: "3/22/2023",
-
-        },
-    ]
+    const eventData = data.eventData;
     return (
 
         <div className="overflow-x-auto  flex gap-5 items-center pr-[60px]">

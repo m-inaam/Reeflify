@@ -1,41 +1,97 @@
 {
-   
     "NFT": [
         {
             "id": 1,
-            "nft": "nft1",
             "name": "Great Coral Reef",
-            "type": "Coral",
+            "Coraltype": "Coral",
             "price": "4.89 ",
             "owner": "SalvadorDali",
-            "ownerImage": "owner1"
+            "image": "https://i.seadn.io/gae/_hBgSK9Z9iOSRwmViMyfkjTJInMsDHhztRn3PTkcaTr4szYS8nJdbaV_xoKFfw6MfKwUhB77XyGNKQg2bVC6gDXu1WfASJGlu0SZCg?auto=format&w=384",
+            "ownerImage": "https://i.seadn.io/gcs/files/19c58910485e4dbe33c366f203c48b82.jpg?auto=format&w=256"
         },
         {
-            "id":2,
-            "nft": "nft2",
+            "id": 2,
             "name": "Great Coral Reef",
-            "type": "Coral",
+            "Coraltype": "Coral",
             "price": "4.89 ",
             "owner": "SalvadorDali",
-            "ownerImage": "owner2"
+            "image": "https://i.seadn.io/gae/Lksyb5cz2LbsgCcS1JMxwanFasWpU2wUSI762NweAWZWgXdd4-2M6rR713aMFRtPRau_3Qhh2mtRyNtkH-cxHmWRoIqi2LWpjPq-Iw?auto=format&w=384",
+            "ownerImage": "https://i.seadn.io/gcs/files/19c58910485e4dbe33c366f203c48b82.jpg?auto=format&w=256"
         },
         {
-            "id":3,
-            "nft": "nft3",
+            "id": 3,
             "name": "Great Coral Reef",
-            "type": "Coral",
+            "Coraltype": "Baby Coral",
             "price": "4.89 ",
             "owner": "SalvadorDali",
-            "ownerImage": "owner3"
+            "image": "https://i.seadn.io/gae/1GkYVeIL0ycKH8dMif3oL_fPkBB53aKuxx_HpScd_7Brd2be_nmAZjQigInpuzt-d1oHDtVHnp4VhVJIznI5Ta1KthZ0EotbUJsxOA?auto=format&w=384",
+            "ownerImage": "https://i.seadn.io/gcs/files/19c58910485e4dbe33c366f203c48b82.jpg?auto=format&w=256"
+        }
+    ],
+    "NFTSType": [
+        {
+            "id": 1,
+            "name": "All",
+            "link": ""
+        },
+        {
+            "id": 2,
+            "name": "Fish",
+            "link": ""
+        },
+        {
+            "id": 3,
+            "name": "Coral",
+            "link": ""
         },
         {
             "id": 4,
-            "nft": "nft4",
+            "name": "Baby Coral",
+            "link": ""
+        },
+        {
+            "id": 5,
+            "name": "Divers",
+            "link": ""
+        },
+        {
+            "id": 6,
+            "name": "INFLUENTIAL HYDROLOGISTS",
+            "link": ""
+        }
+    ],
+    "eventData": [
+        {
+            "id": 1,
             "name": "Great Coral Reef",
-            "type": "Coral",
-            "price": "4.89 ",
-            "owner": "SalvadorDali",
-            "ownerImage": "owner4"
+            "about": "Join us for a hands-on workshop where you'll learn about the causes and consequences of coral bleaching",
+            "link": "",
+            "location": "Cairo, Egypt",
+            "date": "3/22/2023"
+        },
+        {
+            "id": 2,
+            "name": "Great Coral Reef",
+            "about": "Join us for a hands-on workshop where you'll learn about the causes and consequences of coral bleaching",
+            "link": "",
+            "location": "Cairo, Egypt",
+            "date": "3/22/2023"
+        },
+        {
+            "id": 3,
+            "name": "Great Coral Reef",
+            "about": "Join us for a hands-on workshop where you'll learn about the causes and consequences of coral bleaching",
+            "link": "",
+            "location": "Cairo, Egypt",
+            "date": "3/22/2023"
+        },
+        {
+            "id": 4,
+            "name": "Great Coral Reef",
+            "about": "Join us for a hands-on workshop where you'll learn about the causes and consequences of coral bleaching",
+            "link": "",
+            "location": "Cairo, Egypt",
+            "date": "3/22/2023"
         }
     ]
 }

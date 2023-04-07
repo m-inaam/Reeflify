@@ -4,7 +4,7 @@ import NFTs from "../../components/NFTs";
 import Events from "../../components/Events";
 import rightshadow from "../../assets/image/rightshadow.png"
 import { FiChevronDown, FiChevronRight } from "react-icons/all"
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const HomePage = () => {
@@ -57,13 +57,13 @@ const HomePage = () => {
            
             <div className="p-3">
                 <h4 className="   text-white text-[20px]">Metaverse</h4>
-                <div className="  bg-gradient-to-r from-white via-primary to-primary p-[3px]  bg-gray rounded-lg">
+                <Link to="/metaverse" className="  bg-gradient-to-r from-white via-primary to-primary p-[3px]  bg-gray rounded-lg">
                     <div className=" h-full w-full bg-gray flex items-center justify-between p-2 rounded">
                         <Meta />
                         <button className=" text-white bg-primary px-3 py-2 text-[14px] rounded-lg">Join The Wait List</button>
                     </div>
 
-                </div>
+                </Link>
             </div>
         </div>
     );

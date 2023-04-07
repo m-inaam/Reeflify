@@ -1,49 +1,13 @@
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
-import { FiChevronDown,  FiMinus, FiPlus, FiSearch } from "react-icons/all"
+import { GoogleMap, MarkerF, useJsApiLoader } from "@react-google-maps/api";
+import { FiChevronDown, FiMinus, FiPlus, FiSearch } from "react-icons/all"
 import EventCard from "../../components/EventCard";
 import { useState } from "react";
+import data from "../../data/db.json"
+import tag from "../../assets/svg/tag.svg"
 
 
 const EventsPage = () => {
-    const eventData = [
-        {
-            id: 1,
-            name: "Great Coral Reef",
-            about: "Join us for a hands-on workshop where you'll learn about the causes and consequences of coral bleaching",
-            link: "",
-            location: "Cairo, Egypt",
-            date: "3/22/2023",
-
-        },
-
-        {
-            id: 3,
-            name: "Great Coral Reef",
-            about: "Join us for a hands-on workshop where you'll learn about the causes and consequences of coral bleaching",
-            link: "",
-            location: "Cairo, Egypt",
-            date: "3/22/2023",
-
-        },
-        {
-            id: 3,
-            name: "Great Coral Reef",
-            about: "Join us for a hands-on workshop where you'll learn about the causes and consequences of coral bleaching",
-            link: "",
-            location: "Cairo, Egypt",
-            date: "3/22/2023",
-
-        },
-        {
-            id: 4,
-            name: "Great Coral Reef",
-            about: "Join us for a hands-on workshop where you'll learn about the causes and consequences of coral bleaching",
-            link: "",
-            location: "Cairo, Egypt",
-            date: "3/22/2023",
-
-        },
-    ]
+    const eventData = data.eventData;
     return (
         <div className=" h-screen p-3 pr-[70px] pl-[80px]">
             <div className="h-[45vh]">
@@ -123,6 +87,22 @@ function GoogleMapPage() {
                     }}
                 >
 
+
+                    <MarkerF
+                        position={{ lat: 34.0, lng: 20.0 }}
+
+                        options={{
+                            icon: tag,
+                        }}
+                    />
+
+                    <MarkerF
+                        position={{ lat: 31.0, lng: 23.0 }}
+
+                        options={{
+                            icon: tag,
+                        }}
+                    />
 
                 </GoogleMap>
 
